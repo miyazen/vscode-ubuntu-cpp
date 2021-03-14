@@ -1,0 +1,13 @@
+{
+    "name": "vscode-ubuntu-cpp",
+    "dockerComposeFile": "./docker-compose.yml",
+    "service": "ubuntu-cpp",
+    "extensions": [
+        "mhutchie.git-graph",
+        "ms-vscode.cpptools",
+        "ms-vscode.cmake-tools",
+        "twxs.cmake"
+    ],
+    "workspaceFolder": "/workspace",
+    "shutdownAction": "stopCompose"
+} 

@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  ubuntu-cpp:
+    build: .
+    volumes:
+      - ../:/workspace
+    working_dir: /workspace
+    tty: true
+    # to use gdb
+    cap_add:
+      - SYS_PTRACE
+    security_opt:
+      - seccomp:unconfined
